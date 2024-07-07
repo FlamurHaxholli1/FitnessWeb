@@ -565,7 +565,7 @@ a:hover{
       display: none !important;
     }
   }
-  @media (max-width: 400px) {
+  @media ((min-width:380px) and (max-width: 420px)) {
       .header{
         padding: 30px 7%;
     }
