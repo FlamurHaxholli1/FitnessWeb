@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:  sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(0, 0, 12);
+    color: white;
+}
+/* =============================== HEADER & NAVBAR ========================================== */
+
+.header{
+  position: fixed;
+  top: 0;
+  width: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 4%;
+  z-index: 2;
+  background-color: rgba(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(20px);
+
+
+}
+.logo{
+    font-size: 20px;
+    font-style: italic;
+}
+
+li, a{
+    display: inline-block;
+    padding: 0 12px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
+
+}
+a:hover{
+    color: cyan;
+}
+
+.register{
+    background-color: white;
+    color: black;
+    padding: 15px 25px;
+    border-radius: 3px;
+  
+    
+}
+.register:hover{
+    background-color: darkcyan  ;
+    color: white;
+    transform: translateY(-12%);
+    box-shadow: 0 0 15px cyan, 0 0 25px cyan;
+  
+}
+
+/* =================================== HOME SECTION =================================== */
+#home{
+    margin-top: 5rem;
+}
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 13rem;
+    margin-left: 5rem;
+    flex-wrap: wrap;
+}
+.home-title-h1, .home-p{
+    padding: 20px 0;
+}
+.home-title-h1{
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 55px;
+}
+.home-title-h2{
+    -webkit-text-stroke: 1px darkcyan;
+    color: transparent;
+    font-size: 45px;
+}
+.home-p{
+    opacity: 0.5;
+}
+.home-btn{
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: darkcyan;
+    color: white;
+    transition: 0.3s;
+    margin-bottom: 5rem;
+    border-radius: 3px;
+}
+.home-btn:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-10%);
+    box-shadow: 0 0 10px cyan, 0 0 15px cyan;
+}
+
+.home-triangle{
+    height: 580px;
+    position: absolute;
+    right: 0;
+    bottom: -3%;
+    clip-path:polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.home-triangle-1{
+    width: 35rem;
+    background-color: darkcyan;
+}
+.home-triangle-2{
+    height: 50rem;
+    width: 39rem;
+    background-color: darkcyan;
+}
+.home-img{
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 44rem;
+    margin-top: 2.2rem;
+}
+#logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.logo-img{
+    width: 120px;
+}
+
+/* ===================================== PROGRAM SECTION ===================================== */
+
+#program{
+    margin-top: 14rem ;
+    margin-bottom: 3rem;
+}
+.program-h1, .program-h2{
+    text-align: center;
+    padding: 5px 0;
+    font-size: 35px;
+}
+.program-h2{
+    color: cyan;
+    font-family: "Dancing Script", cursive;
+    transform: rotate(-5deg);
+}
+.program-span{
+    -webkit-text-stroke: 1px darkcyan;
+    color: transparent;
+}
+.program-h1{
+    text-transform: uppercase;
+}
+.program-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8rem;
+    
+}
+.flex, .cardio, .yoga, .lifting{
+    background-color: rgb(0, 0, 19);
+    padding: 40px 15px;
+    height: 10rem;
+    width: 12rem;
+    transition: 0.3s;
+    position: relative;
+    border-radius: 3px;
+    
+}
+.flex-img,.cardio-img,.yoga-img,.lifting-img{
+    position: absolute;
+    width: 60px;
+    left: 2%;
+    top: 2%;
+    border-radius: 50%;
+}
+.cardio-img{
+    width: 100px;
+}
+.lifting-img{
+    width: 70px;
+    top: -5%;
+}
+
+.flex:hover, .cardio:hover, .yoga:hover, .lifting:hover{
+    cursor: pointer;
+   background-color: darkcyan;
+   color: black;
+  
+}
+
+.flex-title, .cardio-title, .yoga-title, .lifting-title{
+      padding-top: 40px ;
+  }
+.flex-p,.cardio-p,.yoga-p,.lifting-p{
+    padding-top: 10px;
+    opacity: 0.5;
+    padding-bottom: 15px;
+}
+
+/* =================================== CHOOSE SECTION ====================================== */
+
+#choose{
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+}
+.choose-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.choose-img{
+    position: relative;
+    width: 35rem;
+    z-index: 4;
+}
+.choose-h3{
+    color: cyan;
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    transform: rotate(-5deg);
+}
+
+.choose-h1{
+    padding: 25px 0;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.choose-p{
+    opacity: 0.5;
+}
+#choose-span{
+    -webkit-text-stroke: 1px darkcyan;
+     color: transparent;
+}
+.choose-triangle{
+    height: 550px;
+    position: absolute;
+    left: 0;
+    bottom: -550%;
+    clip-path:polygon(0 0, 0 100%, 100% 100%);
+}
+
+.choose-triangle-1{
+    width: 35rem;
+    background-color: darkcyan;
+    z-index: -1;
+}
+
+.statics{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows:repeat(1, 80px) ;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+#review-span{
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+}
+
+/* ========================================== PRICE SECTION =================================== */
+
+#price{
+    margin-top: 15rem;
+}
+.price-h3{
+    color: cyan;
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    transform: rotate(-10deg);
+    text-align: center;
+}
+.price-h1{
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+#price-span{
+    -webkit-text-stroke: 1px darkcyan;
+    color: transparent;
+}
+.price-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 8rem 0;
+    flex-wrap: wrap;
+}
+#bronze{
+    color: rgb(107, 26, 26);
+    padding: 20px 0;
+    font-size: 40px;
+}
+#silver{
+    color: silver;
+    padding: 20px 0;
+    font-size: 40px;
+}
+#diamond{
+    color: blue;
+    padding: 20px 0;
+    font-size: 40px;
+}
+
+.basic-card, .premium-card, .diamond-card {
+    background-color: rgb(0, 0, 19);
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.basic-card:hover, .premium-card:hover, .diamond-card:hover{
+    background-color: darkcyan;
+    color: black;
+    cursor: pointer;
+}
+.price-h4{
+    padding: 20px 0;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.price-total{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.price-p, .basic-p, .intermide-p, .diamond-p{
+    padding: 10px 5px;
+}
+#circle-check{
+    padding: 0 8px;
+}
+.basic-p:nth-child(7){
+    opacity: 0.2;
+}
+.basic-p:nth-child(8) {
+    opacity: 0.2;
+}
+.basic-p:nth-child(9) {
+    opacity: 0.2;
+}
+
+.intermide-p:nth-child(9) {
+    opacity: 0.2;
+}
+.basic-btn,.premium-btn,.diamond-btn{
+    border: none;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#arrow-right{
+    padding-left:  8px;
+    transition: 0.2s;
+}
+#arrow-right:hover{
+    transform: translateX(12%);
+}
+/* ============================================================================================================== */
+#bmi{
+    margin-top: 20rem;
+}
+
+.bmi-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.bmi-h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.bmi-span{
+    -webkit-text-stroke: 1px darkcyan;
+    color: transparent;
+}
+.bmi-p{
+    opacity: 0.5;
+}
+#bmi-img{
+    width: 25rem;
+}
+
+.calc-form{
+    display: grid;
+    row-gap: 1rem;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
+.calc-box{
+    position: relative;
+    border: 2px solid darkcyan;
+}
+.calc-input{
+    width: 100%;
+    background: transparent;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    color: grey; 
+    font-size: 16px; 
+}
+.calc-input::-webkit-outer-spin-button,
+.calc-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.calc-label{
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+}
+
+.bmi-btn{
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: darkcyan;
+    color: white;
+    transition: 0.3s;
+    width: 12rem;
+    border-radius: 3px;
+}
+.bmi-btn:hover{
+    transform: translateY(-10%);
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px cyan, 0 0 15px cyan;
+}
+.calc-message{
+    position: absolute;
+    transform: translateY(1rem);
+}
+.color-red{
+    color: red;
+}
+.color-green{
+    color: green;
+}
+/* ========================================================== */
+#end{
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-company{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.footer-p{
+    padding: 20px 0;
+    opacity: 0.5;
+}
+.footer-btn{
+    border: none;
+    border-radius: 3px;
+    padding: 15px 25px;
+    color: white;
+    background-color: darkcyan;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 2rem;
+}
+.footer-btn:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-10%);
+}
+#footer-input{
+    background: transparent;
+    padding: 10px 15px;
+    outline: none;
+    border: 2px solid darkcyan;
+    color: grey; 
+    font-size: 16px; 
+    border-radius: 3px;
+    margin-right: 1rem;
+
+}
+.footer-copyright, .company-a{
+    opacity: 0.5;
+}
+.footer-h2{
+    padding-bottom: 15px;
+}
+.company-a{
+    padding: 10px 0;
+    display: block;
+}
+#media{
+    padding: 0 10px;
+    margin-top: 5rem;
+    font-size: 25px;
+}
+
+.menu-btn,
+.close-toggle {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+ margin-left: 33rem;
+}
+
+#click {
+  display: none;
+}
+@media (max-width: 850px) {
+    ul {
+      position: fixed;
+      top: 91px;
+      right: -100%;
+      backdrop-filter: blur(20px);
+      height: 150vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 40px 0px;
+      gap: 40px;
+      transition: 0.5s ease;
+      background-color: darkcyan;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+}
+@media (min-width: 851px) and (max-width: 1440px) {
+    .menu-btn,
+    .close-toggle {
+      display: none !important;
+    }
+  }
+  @media (max-width: 400px) {
+    .header{
+        padding: 30px 5%;
+    }
+    #home{
+        margin-top: -1rem;
+    }
+    .home-img{
+        margin-top: 0;
+        margin-left: 6rem;
+        margin-bottom: 5rem;
+    }
+    .home-btn{
+        margin-bottom: 0;
+    }
+    .home-triangle{
+        right: -120%;
+        bottom: -74.7%;
+    }
+    #logos{
+        margin-left: 5rem;
+        gap: 5rem;
+    }
+    .program-h1,.program-h2{
+        margin-left: 23rem;
+    }
+    .program-container{
+        margin-left: 7rem;
+        gap: 5rem;
+    }
+    .flex,.cardio,.yoga,.lifting{
+        width: 20rem;
+        height: 16rem;
+    }
+   
+    
+  }
