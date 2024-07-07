@@ -252,8 +252,8 @@ a:hover{
 .choose-triangle{
     height: 550px;
     position: absolute;
-    left: 0;
-    bottom: -239;
+    left: 0%;
+    bottom: -150%;
     clip-path:polygon(0 0, 0 100%, 100% 100%);
 }
 
