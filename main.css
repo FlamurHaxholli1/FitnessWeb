@@ -566,8 +566,11 @@ a:hover{
     }
   }
   @media (max-width: 400px) {
-    .header{
-        padding: 30px 5%;
+      .header{
+        padding: 30px 7%;
+    }
+    .logo, .menu-btn, .close-toggle{
+        font-size: 25px;
     }
     #home{
         margin-top: -1rem;
