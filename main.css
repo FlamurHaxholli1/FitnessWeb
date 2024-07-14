@@ -559,14 +559,163 @@ a:hover{
       display: block;
     }
 }
+
+@media (max-width: 1024px) {
+    .home-container{
+        flex-direction: column;
+    }
+    .home-intro{
+        text-align: center;   
+    }
+    .home-title-h2, .home-title-h1{
+        font-size: 4rem;
+    }
+    .home-p{
+        font-size: 1.4rem;
+    }
+    .home-triangle{
+    bottom: -42.4%;
+    right: -3%;
+    }
+    .home-triangle-2{
+        width: 30rem;
+    }
+    .home-img{
+        margin-left: 12rem;
+    }
+    .choose-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .reason{
+        margin-left: 12rem;
+    }
+    .choose-triangle{
+        bottom: -248.8%;
+    }
+    .choose-img{
+        margin-right: 20rem;
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 900px) {
+    .program-container{
+        gap: 4rem;
+        margin-left: 4rem;
+    }
+    .cardio{
+    padding-bottom: 2rem;
+    }
+}
+@media (max-width: 816px){
+    .footer-container{
+        flex-direction: column;
+        gap: 4rem ;
+    }
+    .footer-company{
+     gap: 12rem;
+    }
+    .media{
+        margin-left: 3rem;
+        margin-bottom: 4rem;
+    }
+    .footer-p{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px) {
+  .header{
+    padding: 30px 8%;
+}
+
+.home-container{
+    margin-left: 2rem;
+}
+
+.home-triangle-1, .home-triangle-2{
+    bottom: -44.3%;
+    right: -21%;
+}
+
+#logos{
+    gap: 8rem;
+    margin-left: 1rem;
+}
+.program-h1,.program-h2{
+    margin-left: 8rem;
+}
+.program-container{
+    margin-left: 9rem;
+}
+.choose-triangle{
+    bottom: -294.7%;
+}
+.price-h1, .price-h3{
+    margin-left: 8rem;
+}
+.price-container{
+    margin-left: 7rem;
+    row-gap: 4rem;
+}
+.bmi-container{
+    margin-left: 7rem;
+    row-gap: 4rem;
+}
+.footer-company{
+    margin-left: 7rem;
+    gap: 10rem;
+}
+.media{
+    margin-left: 9rem;
+}
+
+}
+@media (max-width: 425px)  {
+.header{
+    padding: 30px 8%;
+}
+
+.logo{
+    font-size: 25px;
+}
+.menu-btn, .close-toggle{
+    font-size: 30px;
+}
+.home-triangle-1{
+    right: -118%;
+    bottom: -110.3%;
+}
+.program-h1,.program-h2,.price-h1,.price-h3{
+    margin-left: 20rem;
+    width: 20rem;
+}
+.program-container,.price-container,.bmi-container{
+    margin-left: 20rem;
+    width: 20rem;
+}
+
+.choose-triangle{
+bottom: -559%;
+}
+.footer-container{
+    margin-left: 20rem;
+    width: 20rem;
+}
+.footer-company{
+    flex-direction: row;
+}
+}
+
+
+
 @media (min-width: 851px) and (max-width: 1440px) {
     .menu-btn,
     .close-toggle {
       display: none !important;
     }
   }
-  @media ((min-width:380px) and (max-width: 420px)) {
-      .header{
+  @media (max-width: 400px) {
+    .header{
         padding: 30px 7%;
     }
     .logo, .menu-btn, .close-toggle{
@@ -603,5 +752,4 @@ a:hover{
         height: 16rem;
     }
    
-    
   }
