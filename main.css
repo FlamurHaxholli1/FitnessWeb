@@ -696,3 +696,11 @@ ul{
     top: 118px;
 }
   }
+  @media (min-width: 390px) and (max-width: 420px) {
+    .header{
+        padding: 45px 10%;
+    }
+    .logo,.menu-btn,.close-toggle{
+        font-size: 25px;
+    }
+  }
