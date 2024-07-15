@@ -542,10 +542,10 @@ a:hover{
 @media (max-width: 850px) {
     ul {
       position: fixed;
-      top: 91px;
+      top: 88px;
       right: -100%;
       backdrop-filter: blur(20px);
-      height: 150vh;
+      height: 205vh;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -553,203 +553,146 @@ a:hover{
       gap: 40px;
       transition: 0.5s ease;
       background-color: darkcyan;
+      font-size: 18px;
     }
   
     .menu-btn {
       display: block;
     }
+    .header{
+        padding: 35px 7%;
+    }
+}
+@media (min-width: 851px) and (max-width: 1440px) {
+    .menu-btn, .close-toggle{
+        display: none !important; 
+    }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px)  {
     .home-container{
-        flex-direction: column;
+        margin-left: 20rem;
     }
     .home-intro{
-        text-align: center;   
-    }
-    .home-title-h2, .home-title-h1{
-        font-size: 4rem;
-    }
-    .home-p{
-        font-size: 1.4rem;
+        text-align: center;
     }
     .home-triangle{
-    bottom: -42.4%;
-    right: -3%;
-    }
-    .home-triangle-2{
-        width: 30rem;
-    }
-    .home-img{
-        margin-left: 12rem;
+        bottom: -37.8%;
+        right: -3%;
     }
     .choose-container{
-        flex-direction: column;
-        gap: 2rem;
+        row-gap: 2rem;
+    }
+    .choose-images{
+        margin-right: 23rem;
     }
     .reason{
-        margin-left: 12rem;
+        margin-left: 15rem;
     }
     .choose-triangle{
-        bottom: -248.8%;
+        bottom: -242.8%;
     }
-    .choose-img{
-        margin-right: 20rem;
-        margin-top: 2rem;
-    }
-}
-@media (max-width: 900px) {
     .program-container{
-        gap: 4rem;
-        margin-left: 4rem;
-    }
-    .cardio{
-    padding-bottom: 2rem;
+        margin-left: 2rem;
     }
 }
-@media (max-width: 816px){
-    .footer-container{
-        flex-direction: column;
-        gap: 4rem ;
+
+  @media (max-width: 887px) {
+    .program-container{
+        margin-left: 10rem;
+        row-gap: 2rem;
+        column-gap: 1rem;
     }
-    .footer-company{
-     gap: 12rem;
-    }
-    .media{
-        margin-left: 3rem;
-        margin-bottom: 4rem;
-    }
-    .footer-p{
-        font-size: 1.1rem;
-    }
-}
-@media (max-width: 768px) {
-  .header{
-    padding: 30px 8%;
-}
-
-.home-container{
-    margin-left: 2rem;
-}
-
-.home-triangle-1, .home-triangle-2{
-    bottom: -44.3%;
-    right: -21%;
-}
-
-#logos{
-    gap: 8rem;
-    margin-left: 1rem;
-}
-.program-h1,.program-h2{
-    margin-left: 8rem;
-}
-.program-container{
-    margin-left: 9rem;
-}
-.choose-triangle{
-    bottom: -294.7%;
-}
-.price-h1, .price-h3{
-    margin-left: 8rem;
-}
-.price-container{
-    margin-left: 7rem;
-    row-gap: 4rem;
-}
-.bmi-container{
-    margin-left: 7rem;
-    row-gap: 4rem;
-}
-.footer-company{
-    margin-left: 7rem;
-    gap: 10rem;
-}
-.media{
-    margin-left: 9rem;
-}
-
-}
-@media (max-width: 425px)  {
-.header{
-    padding: 30px 8%;
-}
-
-.logo{
-    font-size: 25px;
-}
-.menu-btn, .close-toggle{
-    font-size: 30px;
-}
-.home-triangle-1{
-    right: -118%;
-    bottom: -110.3%;
-}
-.program-h1,.program-h2,.price-h1,.price-h3{
-    margin-left: 20rem;
-    width: 20rem;
-}
-.program-container,.price-container,.bmi-container{
-    margin-left: 20rem;
-    width: 20rem;
-}
-
-.choose-triangle{
-bottom: -559%;
-}
-.footer-container{
-    margin-left: 20rem;
-    width: 20rem;
-}
-.footer-company{
-    flex-direction: row;
-}
-}
-
-
-
-@media (min-width: 851px) and (max-width: 1440px) {
-    .menu-btn,
-    .close-toggle {
-      display: none !important;
+    .program-h1, .program-h2{
+        margin-left: 9rem;
     }
   }
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     .header{
-        padding: 30px 7%;
+        padding: 40px 10%;
     }
-    .logo, .menu-btn, .close-toggle{
-        font-size: 25px;
-    }
-    #home{
-        margin-top: -1rem;
-    }
-    .home-img{
-        margin-top: 0;
-        margin-left: 6rem;
-        margin-bottom: 5rem;
-    }
-    .home-btn{
-        margin-bottom: 0;
+    ul{
+        top: 105px;
     }
     .home-triangle{
-        right: -120%;
-        bottom: -74.7%;
+        bottom: -83.5%;
+        right: -36%;
     }
     #logos{
         margin-left: 5rem;
-        gap: 5rem;
+        gap: 8rem;
     }
-    .program-h1,.program-h2{
-        margin-left: 23rem;
+    .program-h1, .program-h2, .price-h1, .price-h3{
+        margin-left: 16rem;
     }
     .program-container{
+        margin-left: 15rem;
+    }
+    .choose-triangle{
+        bottom: -405.8%;
+    }
+    .choose-img{
+        margin-left: 2rem;
+    }
+    .reason{
+        margin-left: 20rem;
+    }
+    .price-container{
+        margin-left: 15rem;
+        row-gap: 2rem;
+    }
+    .bmi-container{
+        margin-left: 20rem;
+        row-gap: 2rem;
+    }
+    .footer-container{
+        margin-left: 15rem;
+    }
+    .footer-company{
+        gap: 6rem;
+       padding: 30px 0;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .home-intro{
         margin-left: 7rem;
-        gap: 5rem;
     }
-    .flex,.cardio,.yoga,.lifting{
+    .home-triangle{
+        right: -149%;
+        bottom: -111%;
+    }
+    .program-h1,.program-h2, .price-h1, .price-h3{
+        margin-left: 26rem;
+        width: 15rem;
+    }
+    .program-container, .price-container{
+        margin-left: 27rem;
+        width: 15rem;
+    }
+    .choose-triangle{
+        bottom: -538.6%;
+    }
+    .bmi-container{
+        margin-left: 25rem;
         width: 20rem;
-        height: 16rem;
     }
-   
+    .footer-container{
+        margin-left: 20rem;
+        width: 30rem;
+    }
+  }
+  @media (max-width: 375px) {
+.header{
+    padding: 45px 11%;
+}    
+.home-triangle{
+    right: -180%;
+}
+.home-container{
+    width: 20rem;
+}
+ul{
+    top: 118px;
+}
   }
